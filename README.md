@@ -36,25 +36,3 @@ You can access the link to demonstrate the data by passing the pokemon type as a
 > type: Water
 
 > http://localhost:3000/pokedex/v1/type/Water
-
-#
-## Docker
-The application contains a docker file, if you want to go up in a container, use the command below for:
-
-Create Image
-> docker build -t api-pokedex-nodejs:latest .   
-
-Create Container
->docker run --name api-pokedex-nodejs-container -p 3000:3000 api-pokedex-nodejs:latest  
-
-#
-## Docker Hub
-The image is hosted on the docker hub, enter the command below to download and run the image in a container
-
->docker run --name api-pokedex-nodejs-container -p 3000:3000 gianeric08/api-pokedex-nodejs:latest
-
-
-## Copyright Notice
-
-Please note everything in repository are copyrighted by the Pokémon Company and its affiliates.
-This repository is merely a compilation of data collected by the editors of [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
